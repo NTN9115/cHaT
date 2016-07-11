@@ -1,1 +1,5 @@
-***It's my first program on Github***
+# A small chatroom program
+
+### Use:
+*jQuery
+*Bootstrap
