@@ -1,10 +1,16 @@
-# A small chatroom program
+chatroom - A small chatroom webpage
+========================================
 
-### Use Ajax
+Just chat with each other in a smooth page. No Ads,no other useless function.
 
-Ajax
+Icon
+----------------------------------------
 
-### Use:
-* jQuery
-* Bootstrap
-* Less
+Use [Favicon Generator](http://realfavicongenerator.net) to build Favicon.
+(I think I'll mess this later...)
+
+### Tag
+
+*   jQuery
+*   Bootstrap
+*   Less
