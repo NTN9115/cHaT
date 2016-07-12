@@ -12,9 +12,10 @@
   <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 
-  <title>ChatRoom-Welcome  Let's just Chat,nothing more</title>
+  <title>ChatRoom-Hellow User  Let's just Chat,nothing more</title>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/master.less">
+  <link rel="stylesheet/less" type="text/css" href="/css/master.less">
+  <link rel="stylesheet/less" type="text/css" href="/css/signin.less">
   <script src="/js/less.min.js" charset="utf-8"></script>
 </head>
 <body>
@@ -38,9 +39,26 @@
     </div>
   </nav>
 
-  <script src="./js/jQuery.js" charset="utf-8"></script>
-  <script src="./js/bootstrap.min.js" charset="utf-8"></script>
-  <script src="./js/submitChat.js" charset="utf-8"></script>
-  <script src="./js/moment.js" charset="utf-8"></script>
+  <div class="container">
+    <form class="form-signin" action="/php/" method="post">
+      <h2 class="form-signin-heading">Sign in</h2>
+      <label for="inputEmail" class="sr-only"></label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only"></label>
+      <input type="password" class="form-control" placeholder="Password" required>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="remember-me">
+          Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-pirmary btn-block" type="submit">Sign in</button>
+    </form>
+  </div>
+
+  <script src="/js/jQuery.js" charset="utf-8"></script>
+  <script src="/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="/js/submitChat.js" charset="utf-8"></script>
+  <script src="/js/moment.js" charset="utf-8"></script>
 </body>
 </html>
