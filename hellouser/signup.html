@@ -15,7 +15,7 @@
   <title>ChatRoom-Hellow User  Let's just Chat,nothing more</title>
   <link rel="stylesheet" href="/chat/css/bootstrap.min.css">
   <link rel="stylesheet/less" type="text/css" href="/chat/css/master.less">
-  <link rel="stylesheet/less" type="text/css" href="/chat/css/signin.less">
+  <link rel="stylesheet/less" type="text/css" href="/chat/css/signup.less">
   <script src="/chat/js/less.min.js" charset="utf-8"></script>
 </head>
 <body>
@@ -41,7 +41,7 @@
 
   <div class="container">
     <form class="form-signin" action="/php/" method="post">
-      <h2 class="form-signin-heading text-center">Sign in cHaT</h2>
+      <h2 class="form-signin-heading text-center">Sign up cHaT</h2>
       <div class="alert alert-danger alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -52,15 +52,11 @@
       <input type="email" class="form-control" id="inputEmail" placeholder="Email address" required autofocus>
       <label for="inputPassword" class="sr-only"></label>
       <input type="password" class="form-control" placeholder="Password" required>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="remember-me">
-          Remember me
-        </label>
-      </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <label for="inputPasswordAgain" class="sr-only"></label>
+      <input type="password" class="form-control" placeholder="Password Again" required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
         <h3 class="text-center">Or</h3>
-      <button class="btn btn-lg btn-info btn-block" type="button">Sign up</button>
+      <button class="btn btn-lg btn-info btn-block" type="button">Sign in</button>
     </form>
   </div>
 
