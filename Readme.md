@@ -14,3 +14,9 @@ Use [Favicon Generator](http://realfavicongenerator.net) to build Favicon.
 *   jQuery
 *   Bootstrap
 *   Less
+
+Contact
+
+---------------------------------------
+
+Please Do Not Contact Me

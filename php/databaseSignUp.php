@@ -13,6 +13,10 @@
   mysql_select_db($connect,basic_user);
   //============================================================================
 
+  //Query user
+  //  TO DO
+  //===========================================================================
+
   //Insert User
   $userData = "INSERT INTO basic_user (user_email,user_name,user_passwd) Vaules (";
   $userData = $userData.Email.userName.password_hash($Passwd,PASSWORD_DEFAULT).")";
