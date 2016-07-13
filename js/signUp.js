@@ -3,13 +3,13 @@ $(function() {
     event.preventDefault();
     $('.alert-danger').css("display","none");
     $('#subErrorMessage').remove();
-    login();
+    signup();
   });
   $('.form-signin').submit(function(){
-    event.preventDefault();
     $('.alert-danger').css("display","none");
     $('#subErrorMessage').remove();
-    login();
+    event.preventDefault();
+    signup();
   });
 
   $('button[class="close"]').click(function(){
@@ -18,10 +18,10 @@ $(function() {
   });
 });
 
-function login() {
+function signup() {
   var emailValue = $('#inputEmail').val();
   var PasswdValue = $('input[type=password]').val();
-
+  var repeatPasswd = $('input[placeholder="Password Again"]').val();
   //verify input
   if (emailValue === "") {
     $('#errorMessage').append("<span id=\"subErrorMessage\">Please input Email</span>");
@@ -30,6 +30,16 @@ function login() {
   }
   if (PasswdValue === "") {
     $('#errorMessage').append("<span id=\"subErrorMessage\">Please input Password</span>");
+    $('.alert-danger').css("display","block");
+    return 1;
+  }
+  if (repeatPasswd === "") {
+    $('#errorMessage').append("<span id=\"subErrorMessage\">Please input Password Again</span>");
+    $('.alert-danger').css("display","block");
+    return 1;
+  }
+  if (PasswdValue != repeatPasswd) {
+    $('#errorMessage').append("<span id=\"subErrorMessage\">Password doesn't match</span>");
     $('.alert-danger').css("display","block");
     return 1;
   }
@@ -61,7 +71,7 @@ function login() {
   } else {
     xmlhttpVerfi = new ActiveXObject("Microsoft.XMLHTTP");
   }
-  xmlhttpVerfi.open("POST","/chat//php/verfilelogin.php",false);
+  xmlhttpVerfi.open("POST","/chat//php/signup.php",false);
   xmlhttpVerfi.setRequestHeader("Content-type","application/x-www-form-urlencoded");
   xmlhttpVerfi.send(sendContent);
 
