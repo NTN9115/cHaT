@@ -7,6 +7,11 @@ $(function() {
     event.preventDefault();
     login();
   });
+
+  $('button[class="close"]').click(function(){
+    $('.alert-danger').css("display","none");
+    $('#subErrorMessage').remove();
+  });
 });
 
 function login() {
@@ -15,7 +20,7 @@ function login() {
 
   //verify input
   if (emailValue == "") {
-    $('#errorMessage').append("Please input Email");
+    $('#errorMessage').append("<span id=\"subErrorMessage\">Please input Email</span>");
     $('.alert-danger').css("display","block");
     return 1;
   }
