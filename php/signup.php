@@ -26,4 +26,7 @@ $receiveToken = isset($_POST['token'])       ?       $_POST['token'] : '';
     }
     include("/chat/php/databaseSignUp.php");
     }
+    echo "good";
+    $_SESSION['Online'] = 'true';
+
  ?>
