@@ -20,8 +20,10 @@ $(function() {
 
 function signup() {
   var emailValue = $('#inputEmail').val();
+  var userName = $('input[type=text]').val();
   var PasswdValue = $('input[type=password]').val();
   var repeatPasswd = $('input[placeholder="Password Again"]').val();
+
   //verify input
   if (emailValue === "") {
     $('#errorMessage').append("<span id=\"subErrorMessage\">Please input Email</span>");
@@ -35,6 +37,11 @@ function signup() {
   }
   if (repeatPasswd === "") {
     $('#errorMessage').append("<span id=\"subErrorMessage\">Please input Password Again</span>");
+    $('.alert-danger').css("display","block");
+    return 1;
+  }
+  if (userName === "") {
+    $('#errorMessage').append("<span id=\"subErrorMessage\">Please input User Name</span>");
     $('.alert-danger').css("display","block");
     return 1;
   }
@@ -62,8 +69,9 @@ function signup() {
   //Mix token and password to transport,later
   //TO DO
   var email = $('#inputEmail').val();
+  var username = $('input[type=text]').val();
   var passwd = md5($('input[type="password"]').val());
-  var sendContent = "Email=" + email + "&Passwd=" + passwd + "&receiveToken=" + token;
+  var sendContent = "Email=" + email + "&username=" + username +"&Passwd=" + passwd + "&receiveToken=" + token;
   alert(sendContent);
   var xmlhttpVerfi;
   if (window.XMLHttpRequest) {
