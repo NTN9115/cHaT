@@ -1,5 +1,7 @@
 <?php
 
+  error_reporting(E_ERROR | E_WARNING | E_PARSE); //Disable Notice;
+
   $server = "192.168.24.156:3306";
   $user = "root";
   $passwd = "876412";

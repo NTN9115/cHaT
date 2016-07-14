@@ -1,5 +1,7 @@
 <?php
 
+  error_reporting(E_ERROR | E_WARNING | E_PARSE); //Disable Notice;
+
   //Initializing variables
          $token = "";
          $Email = "";
@@ -32,6 +34,6 @@ $receiveToken = isset($_POST['token'])       ?       $_POST['token'] : '';
   }
   $_SESSION['Online'] = 'true';
   $_SESSION['userName'] = 'userName';
-  echo "string";
+  echo "good";
 
  ?>
