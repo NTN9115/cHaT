@@ -10,20 +10,26 @@
     die('Connect failed');
   }
   mysqli_autocommit($connect,TRUE);
-  mysql_select_db($connect,basic_user);
+  mysqli_select_db($connect,chat_user);
   //============================================================================
 
   //Query user
   //  TO DO
-  //===========================================================================
+  //============================================================================
+
+  //Test
+  // $Email = "test@test.com";
+  // $userName = "databaseTester";
+  // $Passwd = "PasswdTest";
+  //============================================================================
 
   //Insert User
-  $userData = "INSERT INTO basic_user (user_email,user_name,user_passwd) Vaules (";
-  $userData = $userData.Email.userName.password_hash($Passwd,PASSWORD_DEFAULT).")";
+  $userData = "INSERT INTO basic_user (user_email,user_name,user_passwd) Values (";
+  $userData = $userData."\"".$Email."\",\"".$userName."\",\"".password_hash($Passwd,PASSWORD_DEFAULT)."\")";
   mysqli_query($connect,$userData);
 
 
   //close connect
-  mysqli_close($conn);
+  mysqli_close($connect);
   //============================================================================
  ?>

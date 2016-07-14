@@ -11,7 +11,7 @@
 
   //Check if declared
        $token = isset($_GET['requireToken']) ? $_GET['requireToken'] : '';
-       $Email = isset($_POST['email'])       ?       $_POST['email'] : '';
+       $Email = isset($_POST['Email'])       ?       $_POST['Email'] : '';
     $userName = isset($_POST['username'])    ?    $_POST['username'] : '';
       $Passwd = isset($_POST['passwd'])      ?      $_POST['passwd'] : '';
 $receiveToken = isset($_POST['token'])       ?       $_POST['token'] : '';
@@ -26,12 +26,12 @@ $receiveToken = isset($_POST['token'])       ?       $_POST['token'] : '';
   } else {
     session_start();
     if ($receiveToken != $_SESSION['token']) {
-      die('Err401')
+      die('Err401');
+    }
+    include("databaseSignUp.php");
   }
-  include("/chat/php/databaseSignUp.php");
-  }
-  echo "good";
   $_SESSION['Online'] = 'true';
   $_SESSION['userName'] = 'userName';
+  echo "string";
 
  ?>
