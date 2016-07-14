@@ -1,5 +1,11 @@
 <?php
 // Auth
+session_start();
+if ($_SESSION['Online'] != 'true') {
+  header("/chat/hellouser/signin.html");
+  exit();
+}
+//==============================================================================
  ?>
 <!DOCTYPE html>
 <html lang="en">
