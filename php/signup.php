@@ -32,5 +32,6 @@ $receiveToken = isset($_POST['token'])       ?       $_POST['token'] : '';
   }
   echo "good";
   $_SESSION['Online'] = 'true';
+  $_SESSION['userName'] = 'userName';
 
  ?>

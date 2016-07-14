@@ -83,4 +83,9 @@ function signup() {
   xmlhttpVerfi.setRequestHeader("Content-type","application/x-www-form-urlencoded");
   xmlhttpVerfi.send(sendContent);
 
+  //Check if sign up success
+  var check = xmlhttpVerfi.responseText;
+  if (check == "good") {
+    alert(check);
+  }
 }
