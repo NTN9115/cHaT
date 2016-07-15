@@ -1,10 +1,10 @@
 <?php
 // Auth
-session_start();
-if ($_SESSION['Online'] != 'true') {
-  header("/chat/hellouser/signin.html");
-  exit();
-}
+// session_start();
+// if ($_SESSION['Online'] != 'true') {
+//   header('Location: /chat/hellouser/signin.html');
+//   exit();
+// }
 //==============================================================================
  ?>
 <!DOCTYPE html>
@@ -22,11 +22,21 @@ if ($_SESSION['Online'] != 'true') {
     <meta name="theme-color" content="#ffffff">
   <!-- ===================================================================== -->
 
-  <link rel="stylesheet" href="/char/css/mainBody.less">
+  <link rel="stylesheet" href="/chat/css/bootstrap.min.css">
+  <link rel="stylesheet/less" type="text/css" href="/chat/css/mainbody.less">
   <script src="/chat/js/less.min.js" charset="utf-8"></script>
 </head>
 <body>
 
+  <header>
+    <div id="headerContact">
+      <a href="#" name="chatList"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+      <a href="#" name="contactList"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+    </div>
+  </header>
+  <div id="list">
+    q
+  </div>
 
   <script src="/chat/js/jQuery.js" charset="utf-8"></script>
   <script src="/chat/js/moment.js" charset="utf-8"></script>

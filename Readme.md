@@ -17,6 +17,4 @@ Use [Favicon Generator](http://realfavicongenerator.net) to build Favicon.
 
 Contact
 
----------------------------------------
-
 Please Do Not Contact Me

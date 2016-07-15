@@ -72,20 +72,20 @@ function signup() {
   var username = $('input[type=text]').val();
   var passwd = md5($('input[type="password"]').val());
   var sendContent = "Email=" + email + "&username=" + username +"&Passwd=" + passwd + "&receiveToken=" + token;
-  alert(sendContent);
+  // alert(sendContent);
   var xmlhttpVerfi;
   if (window.XMLHttpRequest) {
     xmlhttpVerfi = new XMLHttpRequest();
   } else {
     xmlhttpVerfi = new ActiveXObject("Microsoft.XMLHTTP");
   }
-  xmlhttpVerfi.open("POST","/chat//php/signup.php",false);
+  xmlhttpVerfi.open("POST","/chat/php/signup.php",false);
   xmlhttpVerfi.setRequestHeader("Content-type","application/x-www-form-urlencoded");
   xmlhttpVerfi.send(sendContent);
 
   //Check if sign up success
   var check = xmlhttpVerfi.responseText;
   if (check == "good") {
-    alert(check);
+    window.location.href = "/chat/chat.php";
   }
 }
