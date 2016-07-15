@@ -34,9 +34,49 @@
       <a href="#" name="contactList"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
     </div>
   </header>
+
+  <!-- Left Side Bar -->
   <div id="list">
-    q
+    <div class="chatListHolder">
+      <ul class="chatList">
+        <li><a href="">
+          <img src="/chat/design/Person_241px_1198581_easyicon.net.png" alt="" class="avator">
+          <h5 class="user2Name">Bob</h5>
+          <p class="glimpTime">now</p>
+          <p class="glimp">Hellow,Are you there...</p>
+        </a></li>
+        <li><a href="">
+          <img src="/chat/design/Person_241px_1198581_easyicon.net.png" alt="" class="avator">
+          <h5 class="user2Name">Jone</h5>
+          <p class="glimpTime">1 min</p>
+          <p class="glimp">Do you wanna have ...</p>
+        </a></li>
+        <li><a href="">
+          <img src="/chat/design/Person_241px_1198581_easyicon.net.png" alt="" class="avator">
+          <h5 class="user2Name">Natsuki</h5>
+          <p class="glimpTime">1 hour</p>
+          <p class="glimp">Oops,my watch was ...</p>
+        </a></li>
+        <li><a href="">
+          <img src="/chat/design/Person_241px_1198581_easyicon.net.png" alt="" class="avator">
+          <h5 class="user2Name">YukihiraType2</h5>
+          <p class="glimpTime">yesterday</p>
+          <p class="glimp">Swetty,shall we have ...</p>
+        </a></li>
+        
+      </ul>
+    </div>
+
+    <div class="contactListHolder">
+      <ul class="contactList">
+        <li><a href="">contact1</a></li>
+        <li><a href="">contact2</a></li>
+        <li><a href="">contact3</a></li>
+        <li><a href="">contact4</a></li>
+      </ul>
+    </div>
   </div>
+  <!-- ===================================================================== -->
 
   <script src="/chat/js/jQuery.js" charset="utf-8"></script>
   <script src="/chat/js/moment.js" charset="utf-8"></script>
