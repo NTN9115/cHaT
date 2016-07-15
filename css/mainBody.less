@@ -7,7 +7,9 @@ body
     background-color: #66CCFF;
     #headerContact
     {
-      width: 350px;
+      margin: 0;
+      float: left;
+      width: 20%;
       height: 100%;
       border-right: 1px solid gray;
       text-align: center;
@@ -19,16 +21,34 @@ body
         color: white;
       }
     }
+
+    #headerChat
+    {
+      // float: left;
+      .headerUser2Name
+      {
+        margin: 0;
+        padding: 0;
+        // width: 300px;
+        line-height: 50px;
+      }
+      .headerAvator
+      {
+        width: 40px;
+        height: auto;
+      }
+    }
   }
 
   #list
   {
-    width: 350px;
+    width: 20%;
     height: 900px;
     background-color: #F5F5F5;
     float: left;
     border-right: 1px solid gray;
-            overflow: scroll;
+    overflow: scroll;
+    box-sizing: border-box;
     .chatListHolder
     {
       width: 100%;
@@ -91,5 +111,13 @@ body
     {
       display: none;
     }
+  }
+
+  #chatContainer
+  {
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
+    background-color: #ddd;
   }
 }

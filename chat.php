@@ -33,6 +33,11 @@
       <a href="#" name="chatList"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
       <a href="#" name="contactList"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
     </div>
+
+    <div id="headerChat">
+      <h3 class="headerUser2Name text-center">cHaT with Bob</h3>
+      <img src="/chat/design/Person_241px_1198581_easyicon.net.png" alt="" class="headerAvator">
+    </div>
   </header>
 
   <!-- Left Side Bar -->
@@ -63,7 +68,7 @@
           <p class="glimpTime">yesterday</p>
           <p class="glimp">Swetty,shall we have ...</p>
         </a></li>
-        
+
       </ul>
     </div>
 
@@ -77,6 +82,11 @@
     </div>
   </div>
   <!-- ===================================================================== -->
+
+
+  <div id="chatContainer">
+    a
+  </div>
 
   <script src="/chat/js/jQuery.js" charset="utf-8"></script>
   <script src="/chat/js/moment.js" charset="utf-8"></script>
