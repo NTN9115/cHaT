@@ -85,7 +85,22 @@
 
 
   <div id="chatContainer">
-    a
+
+    <!-- chatForm -->
+    <div id="chatForm">
+      <div id="chatFormWindow">
+        <p class="friendChats Chats">Hellow,Are you there?</p>
+        <p class="myChats Chats">Umm,Nope.</p>
+        <p class="timeStamp text-center">1 min ago</p>
+        <p class="friendChats Chats">Why aren't you there</p>
+        <p class="myChats Chats">Cause I'm busy now</p>
+      </div>
+      <div id="inputWindow">
+
+      </div>
+    </div>
+    <!-- =================================================================== -->
+
   </div>
 
   <script src="/chat/js/jQuery.js" charset="utf-8"></script>
