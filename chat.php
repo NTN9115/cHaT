@@ -35,7 +35,7 @@
     </div>
 
     <div id="headerChat">
-      <h3 class="headerUser2Name text-center">cHaT with Bob</h3>
+      <h3 class="headerUser2Name">cHaT with Bob</h3>
       <img src="/chat/design/Person_241px_1198581_easyicon.net.png" alt="" class="headerAvator">
     </div>
   </header>
@@ -94,9 +94,12 @@
         <p class="timeStamp text-center">1 min ago</p>
         <p class="friendChats Chats">Why aren't you there</p>
         <p class="myChats Chats">Cause I'm busy now</p>
+
       </div>
       <div id="inputWindow">
-
+        <form id="inputForm">
+          <textarea name="inputArea"></textarea>
+        </form>
       </div>
     </div>
     <!-- =================================================================== -->
