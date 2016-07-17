@@ -1,7 +1,9 @@
 <?php
 
 // Auth
-// session_start();
+session_start();
+$_SESSION['test'] = "test";
+$_SESSION['userID'] = 1;
 // if ($_SESSION['Online'] != 'true') {
 //   header('Location: /chat/hellouser/signin.html');
 //   exit();
@@ -46,25 +48,25 @@
   <div id="list">
     <div class="chatListHolder">
       <ul class="chatList">
-        <li><a href="">
+        <li id="chatList_20"><a href="" class="chatListFocuse">
           <img src="/chat/design/Person_241px_1198581_easyicon.net.png" alt="" class="avator">
           <h5 class="user2Name">Bob</h5>
           <p class="glimpTime">now</p>
           <p class="glimp">Hellow,Are you there...</p>
         </a></li>
-        <li><a href="">
+        <li id="chatList_21"><a href="">
           <img src="/chat/design/Person_241px_1198581_easyicon.net.png" alt="" class="avator">
           <h5 class="user2Name">Jone</h5>
           <p class="glimpTime">1 min</p>
           <p class="glimp">Do you wanna have ...</p>
         </a></li>
-        <li><a href="">
+        <li id="chatList_22"><a href="">
           <img src="/chat/design/Person_241px_1198581_easyicon.net.png" alt="" class="avator">
           <h5 class="user2Name">Natsuki</h5>
           <p class="glimpTime">1 hour</p>
           <p class="glimp">Oops,my watch was ...</p>
         </a></li>
-        <li><a href="">
+        <li id="chatList_23"><a href="">
           <img src="/chat/design/Person_241px_1198581_easyicon.net.png" alt="" class="avator">
           <h5 class="user2Name">YukihiraType2</h5>
           <p class="glimpTime">yesterday</p>
@@ -89,7 +91,7 @@
   <div id="chatContainer">
 
     <!-- chatForm -->
-    <div id="chatForm">
+    <div id="chatForm" class="Form20 chatFormFocuse">
       <div id="chatFormWindow">
         <p class="friendChats Chats">Hellow,Are you there?</p>
         <p class="myChats Chats">Umm,Nope.</p>

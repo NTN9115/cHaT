@@ -4,11 +4,26 @@ $(function(){
     viewChanger();
   });
 
-  
+  $('.chatFormFocuse button[name=Send]').click(function() {
+    event.preventDefault();
+    sendChat();
+  });
+  $('.chatFormFocuse #inputForm').submit(function() {
+    event.preventDefault();
+    sendChat();
+  });
+
+
 });
 
+function showChatForm() {
+  //Click list to choose chat object
+}
+
 function sendChat() {
-  //Use Ajax to send chat
+  $.post('/chat/chatBody.php',{chatContent: $('.chatFormFocuse textarea').val()}, function(data, textStatus, xhr) {
+    /*optional stuff to do after success */
+  });
 }
 
 function receiveChat() {
