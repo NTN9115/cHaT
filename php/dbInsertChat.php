@@ -11,4 +11,7 @@ if (!$connect) {
 mysqli_autocommit($connect,TRUE);
 mysqli_select_db($connect,chat_user);
 //============================================================================
+
+$userID = $_SESSION['userID'];
+$timeStamp = round(microtime(true) * 1000);
  ?>

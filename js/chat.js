@@ -1,3 +1,5 @@
+var User2Name; //Who is talking to.
+
 $(function(){
   viewChanger();
   $(window).resize(function(){
@@ -21,7 +23,7 @@ function showChatForm() {
 }
 
 function sendChat() {
-  $.post('/chat/chatBody.php',{chatContent: $('.chatFormFocuse textarea').val()}, function(data, textStatus, xhr) {
+  $.post('/chat/chatBody.php',{chatContent: $('.chatFormFocuse textarea').val(), to: User2Name}, function(data, textStatus, xhr) {
     /*optional stuff to do after success */
   });
 }
