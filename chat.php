@@ -99,6 +99,9 @@
       <div id="inputWindow">
         <form id="inputForm">
           <textarea name="inputArea"></textarea>
+          <button type="button" name="upLoadPic"><span class="glyphicon glyphicon-picture" aria-hidden="true"></button>
+          <button type="button" name="upLoadFile"><span class="glyphicon glyphicon-open-file" aria-hidden="true"></button>
+          <button type="submit" name="Send">Send</button>
         </form>
       </div>
     </div>
