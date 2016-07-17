@@ -1,5 +1,10 @@
 $(function(){
+  viewChanger();
+  $(window).resize(function(){
+    viewChanger();
+  });
 
+  
 });
 
 function sendChat() {
@@ -20,4 +25,6 @@ function addFriend() {
 
 function viewChanger() {
   //Set form suitable
+  $('#list').css("height",($(window).height() - 50 )+"px");
+  $('#chatContainer').css("height",($(window).height() - 50 )+"px");
 }
