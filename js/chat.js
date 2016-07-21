@@ -3,7 +3,7 @@ var User2Name; //Who is talking to.
 $(function(){
 
   //After frame loaded,Ajax from server for chatList&contactList
-  receiveChat();
+  receiveChatList();
   //============================================================================
 
   //Change Form size
@@ -51,10 +51,10 @@ function receiveChat() {
   //Use setTimeIntervel to pull chat from server
 }
 
-function reveiveChatList() {
+function receiveChatList() {
   //every 2s pull chat list form server
   $.post('/chat/chatBody.php', requestChatList: 'requestChatList', function(data, textStatus, xhr) {
-    
+
   },json);
 }
 

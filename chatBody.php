@@ -1,9 +1,9 @@
 <?php
   session_start();
-  $receive = $_POST['chatContent'];
-  $to = $_POST['to];
+  $receivechatContent = $_POST['chatContent'];
+  $to = $_POST['to'];
 
-  if ($receive != "") {
+  if ($receivechatContent != "") {
     include '/chat/php/dbInsertChat.php';
   }
  ?>
