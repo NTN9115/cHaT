@@ -1,11 +1,22 @@
 var User2Name; //Who is talking to.
 
 $(function(){
+
+  //Change Form size
   viewChanger();
   $(window).resize(function(){
     viewChanger();
   });
+  //============================================================================
 
+
+  //Choose chat object
+  $('.chatlist li a').click(function() {
+    changeUser2();
+  });
+  //============================================================================
+
+  //submit chat
   $('.chatFormFocuse button[name=Send]').click(function() {
     event.preventDefault();
     sendChat();
@@ -14,12 +25,17 @@ $(function(){
     event.preventDefault();
     sendChat();
   });
+  //============================================================================
 
 
 });
 
 function showChatForm() {
   //Click list to choose chat object
+}
+
+function changeUser2() {
+  
 }
 
 function sendChat() {
