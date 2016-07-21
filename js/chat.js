@@ -14,6 +14,7 @@ $(function(){
   $('.chatList li a').click(function(event) {
     $('.chatListFocuse').removeClass('chatListFocuse');
     $(this).addClass('chatListFocuse');
+    User2Name = 
     event.preventDefault();
   });
   //============================================================================
