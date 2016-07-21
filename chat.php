@@ -48,7 +48,7 @@ $_SESSION['userID'] = 1;
   <div id="list">
     <div class="chatListHolder">
       <ul class="chatList">
-        <li id="chatList_20"><a href="" class="chatListFocuse ">
+        <li id="chatList_20"><a href="" class="chatListFocuse " userID = "202">
           <img src="/chat/design/Person_241px_1198581_easyicon.net.png" alt="" class="avator">
           <h5 class="user2Name">Bob</h5>
           <p class="glimpTime">now</p>

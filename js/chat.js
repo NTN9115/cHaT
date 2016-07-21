@@ -2,6 +2,10 @@ var User2Name; //Who is talking to.
 
 $(function(){
 
+  //After frame loaded,Ajax from server for chatList&contactList
+  receiveChat();
+  //============================================================================
+
   //Change Form size
   viewChanger();
   $(window).resize(function(){
@@ -14,7 +18,7 @@ $(function(){
   $('.chatList li a').click(function(event) {
     $('.chatListFocuse').removeClass('chatListFocuse');
     $(this).addClass('chatListFocuse');
-    User2Name = 
+    User2Name = $(this).attr('userID'); 
     event.preventDefault();
   });
   //============================================================================
@@ -45,6 +49,7 @@ function sendChat() {
 
 function receiveChat() {
   //Use setTimeIntervel to pull chat from server
+
 }
 
 function reveiveChatList() {
