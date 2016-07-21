@@ -18,7 +18,7 @@ $(function(){
   $('.chatList li a').click(function(event) {
     $('.chatListFocuse').removeClass('chatListFocuse');
     $(this).addClass('chatListFocuse');
-    User2Name = $(this).attr('userID'); 
+    User2Name = $(this).attr('userID');
     event.preventDefault();
   });
   //============================================================================
@@ -49,11 +49,13 @@ function sendChat() {
 
 function receiveChat() {
   //Use setTimeIntervel to pull chat from server
-
 }
 
 function reveiveChatList() {
   //every 2s pull chat list form server
+  $.post('/chat/chatBody.php', requestChatList: 'requestChatList', function(data, textStatus, xhr) {
+    
+  },json);
 }
 
 function addFriend() {
