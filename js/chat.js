@@ -11,13 +11,15 @@ $(function(){
 
 
   //Choose chat object
-  $('.chatlist li a').click(function() {
-    changeUser2();
+  $('.chatList li a').click(function(event) {
+    $('.chatListFocuse').removeClass('chatListFocuse');
+    $(this).addClass('chatListFocuse');
+    event.preventDefault();
   });
   //============================================================================
 
   //submit chat
-  $('.chatFormFocuse button[name=Send]').click(function() {
+  $('.chatFormFocuse button[name=Send]').click(function(event) {
     event.preventDefault();
     sendChat();
   });
@@ -32,10 +34,6 @@ $(function(){
 
 function showChatForm() {
   //Click list to choose chat object
-}
-
-function changeUser2() {
-  
 }
 
 function sendChat() {
