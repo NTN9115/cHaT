@@ -43,7 +43,7 @@ function showChatForm() {
 
 function sendChat() {
   $.post('/chat/chatBody.php',{chatContent: $('.chatFormFocuse textarea').val(), to: User2Name}, function(data, textStatus, xhr) {
-    /*optional stuff to do after success */
+
   });
 }
 
@@ -53,7 +53,7 @@ function receiveChat() {
 
 function receiveChatList() {
   //every 2s pull chat list form server
-  $.post('/chat/chatBody.php', requestChatList: 'requestChatList', function(data, textStatus, xhr) {
+  $.post('/chat/chatBody.php', receiveChatList: 'receiveChatList', function(data, textStatus, xhr) {
 
   },json);
 }
