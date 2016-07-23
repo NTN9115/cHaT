@@ -1,6 +1,6 @@
 <?php
   //Unit test
-  $User1 = "Bob"
+  $User1 = "Bob";
   //
   $server = "192.168.24.156:3306";
   $user = "root";
