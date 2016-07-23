@@ -9,7 +9,7 @@
     exit();
   }
   if ($receiveChatList != "") {
-    include '/chat/php/dbChatList.php'
+    include '/chat/php/dbQueryChatList.php'
   }
 
  ?>

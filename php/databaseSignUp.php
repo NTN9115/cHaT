@@ -19,7 +19,7 @@
   //  TO DO
   //============================================================================
 
-  //Test
+  //Unit Test
   // $Email = "test@test.com";
   // $userName = "databaseTester";
   // $Passwd = "PasswdTest";
