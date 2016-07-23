@@ -15,8 +15,9 @@
   mysqli_select_db($connect,user_friends);
   //============================================================================
 
-  $queryContent = "select * from user_friends where User1=".$User1;
+  $queryContent = "select * from user_friends where user1=".$User1;
   $queryChatList = mysqli_query($connect,$queryContent);
   echo $queryChatList;
+  $queryContent = "select * from user_friends where user1=".$User1;
 
  ?>
