@@ -30,7 +30,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="#" class="navbar-brand">cHaT</a>
+        <a href="/index.php" class="navbar-brand">cHaT</a>
       </div>
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -47,9 +47,9 @@
     </div>
   </nav>
 
-
+<!-- Include content file -->
   <?php
-    echo $content;
+    include $content;
    ?>
    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
