@@ -40,7 +40,7 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Login</a></li>
+          <li><a href="/userAction/login.php">Login</a></li>
           <li><a href="#">Sign in</a></li>
         </ul>
       </div>
