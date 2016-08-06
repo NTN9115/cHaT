@@ -5,4 +5,4 @@
 
   $content = "login";
   include 'templet/genelTemplet.php';
- ?>
+?>
