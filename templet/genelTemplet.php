@@ -5,6 +5,9 @@
       $content as page content;
       $lessSheetFile as stylesheet;
  -->
+ <?php
+  set_include_path('/var/www/html/');
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
