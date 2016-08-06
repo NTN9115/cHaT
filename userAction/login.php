@@ -4,5 +4,5 @@
   $lessSheetFile = "login";
 
   $content = "login";
-  include '/templet/genelTemplet.php';
+  include 'templet/genelTemplet.php';
  ?>
