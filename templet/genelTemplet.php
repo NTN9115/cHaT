@@ -3,6 +3,7 @@
     import this file,then:
       $title as page title;
       $content as page content;
+      $lessSheetFile as stylesheet;
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +13,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="/favicon.ico">
 
+  <?php if ($lessSheetFile != "") {
+    echo "<link rel=\"stylesheet/less\" type=\"text/css\" href=\"/css/{$lessSheetFile}.less\" charset=\"utf-8\">";
+  } ?>
   <script src="//cdn.bootcss.com/less.js/3.0.0-pre.3/less.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-
   <title><?php echo $title ?></title>
 </head>
 <body>
