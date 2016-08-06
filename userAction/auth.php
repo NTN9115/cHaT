@@ -19,8 +19,13 @@
     session_start();
     if (password_verify($_SESSION['token'],$token)) {
       //database query
+      $_SESSION['Online'] = true;
+      echo 200;
     }else {
-      echo "403";
+      $_SESSION['Online'] = false;
+      echo 403;
     }
+  }elseif ($flag == "signup") {
+    # code...
   }
  ?>
