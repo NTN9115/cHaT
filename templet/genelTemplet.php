@@ -26,7 +26,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#" class="navbar-brand"></a>
+      <a href="#" class="navbar-brand">cHaT</a>
 
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
