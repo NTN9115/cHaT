@@ -28,9 +28,7 @@
   <p>
     <?php
     //output result
-    if ($POST['payload']) {
       echo $output;
-    }
      ?>
   </p>
 </body>
