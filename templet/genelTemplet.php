@@ -27,13 +27,14 @@
         <span class="icon-bar"></span>
       </button>
       <a href="#" class="navbar-brand"></a>
-    </div>
 
-    <div class="collapse navbar-collapse" id="navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
