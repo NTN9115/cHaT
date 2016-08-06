@@ -35,6 +35,11 @@
           <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
           <li><a href="#">Blog</a></li>
         </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
       </div>
     </div>
   </nav>
