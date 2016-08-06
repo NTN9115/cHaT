@@ -7,6 +7,8 @@
   <title><?php echo $title ?></title>
 </head>
 <body>
-
+  <?php
+    echo $indexContent;
+   ?>
 </body>
 </html>
