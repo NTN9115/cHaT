@@ -11,8 +11,8 @@
   foreach ($commands as $command) {
     $tmp = shell_exec($command);
 
-    $output .= $command.".";
+    $output .= $command.":";
     $output .= trim($tmp)."\n";
   }
- echo $output;
+ echo "\n".$output;
  ?>
