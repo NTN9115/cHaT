@@ -7,6 +7,7 @@
  -->
  <?php
   set_include_path('/var/www/html/');
+  set_include_path('/Library/WebServer/Documents');
   ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,7 @@
   <title><?php echo $title ?></title>
 </head>
 <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -43,8 +44,8 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/userAction/login.php">Login</a></li>
-          <li><a href="#">Sign in</a></li>
+          <li><a href="/userAction/login.php">Sign in</a></li>
+          <li><a href="#">Sign up</a></li>
         </ul>
       </div>
     </div>
