@@ -7,7 +7,8 @@ if (PATH_SEPARATOR == ":") {
 }
   $title = "Login";
   $lessSheetFile = "login";
-
+  $jsFile = "/js/action";
+  
   $content = "login";
   include 'templet/genelTemplet.php';
 ?>
