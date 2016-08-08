@@ -10,6 +10,7 @@
   $userEmail = $_POST['userEmail'];
   $passWd = $_POST['passwd'];
   $token = $_POST['token'];
+  set_include_path('/var/www/html/');
 
   if ($flag == "requestToken") {
     session_start();
