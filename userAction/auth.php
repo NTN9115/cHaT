@@ -16,17 +16,21 @@
     session_start();
     $_SESSION['token'] = time();
     echo password_hash($_SESSION['token'],PASSWORD_DEFAULT);
-  }elseif ($flag == "signin") {
+  }else {
     session_start();
     if (password_verify($_SESSION['token'],$token)) {
-      //database query
+      if ($flag == "signin") {
+        //TODO
+      }elseif ($flag == "signup") {
+        //TODO
+      }else {
+        die("Error Request");
+      }
       $_SESSION['Online'] = true;
       echo 200;
     }else {
       $_SESSION['Online'] = false;
       echo 403;
     }
-  }elseif ($flag == "signup") {
-    # code...
   }
  ?>
