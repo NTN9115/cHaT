@@ -44,8 +44,8 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/userAction/login.php">Sign in</a></li>
-          <li><a href="#">Sign up</a></li>
+          <li><a href="/userAction/login.php?target=signin">Sign in</a></li>
+          <li><a href="/userAction/login.php?target=signup">Sign up</a></li>
         </ul>
       </div>
     </div>
