@@ -12,6 +12,8 @@
   $token = $_POST['token'];
   set_include_path('/var/www/html/');
 
+  $passWd = password_hash($passWd,PASSWORD_DEFAULT);
+
   if ($flag == "requestToken") {
     session_start();
     $_SESSION['token'] = time();
@@ -22,17 +24,11 @@
       if ($flag == "signin") {
         include 'userAction/DBAuthConnect.php';
 
-        //check if user exist
-        if (!mysqli_num_rows(mysqli_query($conn,"select * from userBasic where userName = \"{$userEmail}\""))) {
-          echo 400;
-        }else {
-          //TODO
-        }
-      }elseif ($flag == "signup") {
+      }elseif ($flag == "signup") {           //Sign Up
         include 'userAction/DBAuthConnect.php';
 
         //check if user exist
-        if (!mysqli_num_rows(mysqli_query($conn,"select * from userBasic where userName = \"{$userEmail}\""))) {
+        if (mysqli_num_rows(mysqli_query($conn,"select * from userBasic where userEmail = \"{$userEmail}\"")) != 0) {
           echo 400;
         }else {
           //TODO
