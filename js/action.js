@@ -17,10 +17,10 @@ $(document).ready(function() {
   $('.btn-block').click(function(event) {
     event.preventDefault();
     if ($(this).hasClass('folded')) {
-    $('.actionForm').collapse('toggle');
-    $('.btn-block').toggleClass('folded');
-  }else {
-
-  }
+      $('.actionForm').collapse('toggle');
+      $('.btn-block').toggleClass('folded');
+    }else {
+      
+    }
   });
 });

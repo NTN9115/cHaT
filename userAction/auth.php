@@ -20,9 +20,23 @@
     session_start();
     if (password_verify($_SESSION['token'],$token)) {
       if ($flag == "signin") {
-        //TODO
+        include 'userAction/DBAuthConnect.php';
+
+        //check if user exist
+        if (!mysqli_num_rows(mysqli_query($conn,"select * from userBasic where userName = \"{$userEmail}\""))) {
+          echo 400;
+        }else {
+          //TODO
+        }
       }elseif ($flag == "signup") {
-        //TODO
+        include 'userAction/DBAuthConnect.php';
+
+        //check if user exist
+        if (!mysqli_num_rows(mysqli_query($conn,"select * from userBasic where userName = \"{$userEmail}\""))) {
+          echo 400;
+        }else {
+          //TODO
+        }
       }else {
         die("Error Request");
       }
