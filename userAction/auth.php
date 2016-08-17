@@ -32,6 +32,12 @@
       if ($flag == "signin") {
         include 'userAction/DBAuthConnect.php';
 
+        if (!password_verify(mysqli_result(mysqli_query($conn,"select userPW from userBasic where userEmail = \"{$userEmail}\""),0),passWd)) {
+          exit("402");
+        }else {
+          mysqli_query($conn,"");
+        }
+
       }elseif ($flag == "signup") {           //Sign Up
         include 'userAction/DBAuthConnect.php';
 
