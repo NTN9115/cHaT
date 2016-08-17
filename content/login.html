@@ -25,6 +25,10 @@
       <form id="signUpForm">
         <div id="collapseSignUpForm" class="collapse actionForm" >
           <h2>Please sign up</h2>
+          <div class="hidden">
+            <input type="hidden" name="flag" value="signup" readonly="readonly">
+            <input type="hidden" name="token" value="" readonly="readonly">
+          </div>
           <div class="form-group">
             <label for="userName" class="sr-only">User Name</label>
             <input type="text" name="userName" id="userName" class="form-control" placeholder="User Name" autofocus>
