@@ -35,7 +35,7 @@
         if (!password_verify(mysqli_result(mysqli_query($conn,"select userPW from userBasic where userEmail = \"{$userEmail}\""),0),passWd)) {
           exit("402");
         }else {
-          mysqli_query($conn,"");
+          exit("201");
         }
 
       }elseif ($flag == "signup") {           //Sign Up
@@ -51,6 +51,8 @@
         die("Error Request");
       }
       $_SESSION['Online'] = true;
+      $_SESSION['UserName'] = $userName;
+      $_SESSION['Timestamp'] = time();
       exit("200");
     }else {
       $_SESSION['Online'] = false;

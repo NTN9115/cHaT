@@ -4,6 +4,10 @@
       <form id="signInForm">
         <div id="collapseSignInForm" class="collapse in actionForm" >
           <h2>Please sign in</h3>
+            <div class="hidden">
+              <input type="hidden" name="flag" value="signin" readonly="readonly">
+              <input type="hidden" name="token" value="" >
+            </div>
           <div class="form-group">
             <label for="inputEmail" class="sr-only">Email Address</label>
             <input type="text" name="userEmail" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
@@ -27,7 +31,7 @@
           <h2>Please sign up</h2>
           <div class="hidden">
             <input type="hidden" name="flag" value="signup" readonly="readonly">
-            <input type="hidden" name="token" value="" readonly="readonly">
+            <input type="hidden" name="token" value="" >
           </div>
           <div class="form-group">
             <label for="userName" class="sr-only">User Name</label>
