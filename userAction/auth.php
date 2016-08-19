@@ -19,7 +19,6 @@
   set_include_path('/var/www/html/');
   set_include_path('/Library/WebServer/Documents');
 
-  $passWd = password_hash($passWd,PASSWORD_DEFAULT);
 
   if ($flag == "requestToken") {
     session_start();
@@ -31,15 +30,18 @@
     if (password_verify($_SESSION['token'],$token)) {
       if ($flag == "signin") {
         include 'userAction/DBAuthConnect.php';
+        $result = mysqli_query($conn,"select userPW from userBasic where userEmail = \"{$userEmail}\"");
 
-        if (!password_verify(mysqli_result(mysqli_query($conn,"select userPW from userBasic where userEmail = \"{$userEmail}\""),0),passWd)) {
-          exit("402");
+        $row = mysqli_fetch_assoc($result);
+        echo $row["userPW"];
+        if (password_verify($passWd,$row["userPW"])) {
+          echo("201");
         }else {
-          exit("201");
+          echo("403");
         }
-
       }elseif ($flag == "signup") {           //Sign Up
         include 'userAction/DBAuthConnect.php';
+        $passWd = password_hash($passWd,PASSWORD_DEFAULT);
 
         //check if user exist
         if (mysqli_num_rows(mysqli_query($conn,"select * from userBasic where userEmail = \"{$userEmail}\"")) != 0) {
@@ -48,7 +50,7 @@
           mysqli_query($conn,"insert into userBasic (userName,userEmail,userPW) values (\"{$userName}\",\"{$userEmail}\",\"{$passWd}\")");
         }
       }else {
-        die("Error Request");
+        exit("Error Request");
       }
       $_SESSION['Online'] = true;
       $_SESSION['UserName'] = $userName;

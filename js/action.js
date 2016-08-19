@@ -30,7 +30,6 @@ $(document).ready(function() {
         async: false,
       })
       .done(function(data) {
-        console.log("success");
         console.log(token = data);
         $('input[name=token]').val(token);
       })
