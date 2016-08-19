@@ -51,7 +51,7 @@
           mysqli_query($conn,"insert into userBasic (userName,userEmail,userPW) values (\"{$userName}\",\"{$userEmail}\",\"{$passWd}\")");
         }
       }else {
-        exit("Error Request");
+        exit("402");
       }
       $_SESSION['Online'] = true;
       $_SESSION['UserName'] = $userName;
