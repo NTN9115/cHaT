@@ -14,7 +14,7 @@
   }
   $userName = $_POST['userName'];
   $userEmail = $_POST['userEmail'];
-  $passWd = $_POST['passwd'];
+  $passWd = $_POST['password'];
   $token = $_POST['token'];
   set_include_path('/var/www/html/');
   set_include_path('/Library/WebServer/Documents');
@@ -33,11 +33,12 @@
         $result = mysqli_query($conn,"select userPW from userBasic where userEmail = \"{$userEmail}\"");
 
         $row = mysqli_fetch_assoc($result);
-        echo $row["userPW"];
         if (password_verify($passWd,$row["userPW"])) {
-          echo("201");
+          echo $passWd;
+          echo("\n201\t");
         }else {
-          echo("403");
+          $_SESSION['Online'] = false;
+          exit("405");
         }
       }elseif ($flag == "signup") {           //Sign Up
         include 'userAction/DBAuthConnect.php';
