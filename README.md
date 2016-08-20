@@ -14,7 +14,10 @@ DataBase
     *   userPW
     *   signUpDate
 
-*   TABLE userFriends
+*   TABLE userfriends
+
+    *   user1ID
+    *   user2ID
 
 *   TABLE userChat
 
