@@ -9,6 +9,13 @@ $.extend({
   }
 });
 
+var resposeList = {
+  "400": "This Email is been used",
+  "402": "Error request,please contact administrator",
+  "403": "Warring: man-in-the-middle-attach",
+  "405": "Email and password doesn't match"
+}
+
 $(document).ready(function() {
   if ($.urlparam('target') != "signin") {
     $('.actionForm').collapse('toggle');
@@ -19,6 +26,7 @@ $(document).ready(function() {
     if ($(this).hasClass('folded')) {
       $('.actionForm').collapse('toggle');
       $('.btn-block').toggleClass('folded');
+      $('#errorHint').collapse("hide");
     }else {
       var token = "";
 
@@ -43,6 +51,15 @@ $(document).ready(function() {
       console.log($(this).parent().serialize());
       $.post('/userAction/auth.php', $(this).parent().serialize(), function(data, textStatus, xhr) {
         console.log(data);
+
+        switch (data) {
+          case "200":
+            console.log("login success");
+            break;
+          default:
+            $('#errorHint #errorMessage').text(resposeList[data]);
+            $('#errorHint').collapse("show");
+        }
       });
     }
   });
