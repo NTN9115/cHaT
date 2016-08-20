@@ -22,8 +22,10 @@ flag can be:
       include 'userAction/DBAuthConnect.php';
       if ($queryEmail != "") {
         $result = mysqli_query($conn,"");
+        //  TODO
       } else {
-        # code...
+        $result = mysqli_query($conn,"");
+        // TODO
       }
 
       break;
