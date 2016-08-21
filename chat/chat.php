@@ -10,5 +10,5 @@
    header("Location: /userAction/login.php");
    exit("OffLine");
  }
-
+ session_write_close();
  ?>

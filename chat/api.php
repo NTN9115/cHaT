@@ -13,6 +13,7 @@ flag can be:
   if ($_SESSION['Online'] != true) {
    exit("403");
   }
+  session_write_close();
   $flag = $POST['flag'];
   $queryEmail = $POST['qEmail'];
   $queryName = $POST['qName'];
@@ -21,12 +22,15 @@ flag can be:
     case 'search':
       include 'userAction/DBAuthConnect.php';
       if ($queryEmail != "") {
-        $result = mysqli_query($conn,"");
-        //  TODO
+        $result = mysqli_query($conn,"select * from userBasic where userEmail = \"{$queryEmail}\"");
+        while ($row = mysqli_fetch_assoc($result)) {
+          // TODO
+        }
       } else {
-        $result = mysqli_query($conn,"");
+        $result = mysqli_query($conn,"select * from userBasic where userEmail = \"{$queryName}\"");
         // TODO
       }
+      mysqli_free_result($result);
 
       break;
       case 'getFull':
