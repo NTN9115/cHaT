@@ -25,6 +25,8 @@
     echo "<br>";
   }
 print_r($resultArray);
+echo "<br>";
+echo json_encode($resultArray);
 ?>
 <!--
   1.use session to check if online
