@@ -39,7 +39,8 @@
       break;
 
       case 'getCurrentChat':
-      //  TODO
+        include 'userAction/DBAuthConnect.php';
+        $resultArray = array();
       break;
 
       default:
