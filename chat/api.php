@@ -27,13 +27,15 @@
        $resultArray[] = $rowArray;
 
        echo json_encode($resultArray);
-          
+
       }
       mysqli_free_result($result);
       break;
 
       case 'getFull':
-      //  TODO
+        include 'userAction/DBAuthConnect.php';
+        $resultArray = array();
+
       break;
 
       case 'getCurrentChat':
@@ -51,5 +53,34 @@
      1.1 search by userName
      1.2 search by userEmail
    2.[getFull]
+    return what blende whole page needed. e.g:
+      {
+        "userInf" :{
+          "userID"   : "1",
+          "userName" : "Natsuki",
+          "userEmail": "natsuki@chat.com"
+        }
+        "friendsList" :{
+          "Friend" :[
+            {
+              "userID"   :"13",
+              "userName" :"Ryujo",
+              "userEmail":"ryujo@chat.com"
+            },
+            {
+              "userID"   :"14",
+              "userName" :"Yudachi",
+              "userEmail":"yudachi@chat.com"
+            }
+          ]
+          "Family" :[
+            {
+            "userID"   :"14",
+            "userName" :"Ryujo",
+            "userEmail":"ryujo@chat.com"
+            }
+          ]
+        }
+      }
    3.[getCurrentChat]
   -->
