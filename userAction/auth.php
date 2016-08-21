@@ -40,6 +40,7 @@
           $_SESSION['Online'] = false;
           exit("405");
         }
+        mysqli_free_result($result);
       }elseif ($flag == "signup") {           //Sign Up
         include 'userAction/DBAuthConnect.php';
         $passWd = password_hash($passWd,PASSWORD_DEFAULT);
@@ -53,8 +54,15 @@
       }else {
         exit("402");
       }
+
+      $result = mysqli_query($conn,"select userID from userBasic where userEmail = \"{$userEmail}\"");
+      $row = mysqli_fetch_assoc($result);
+      mysqli_free_result($result);
+
       $_SESSION['Online'] = true;
-      $_SESSION['UserName'] = $userName;
+      $_SESSION['userName'] = $userName;
+      $_SESSION['userEmail'] = $userEmail;
+      $_SESSION['userID'] = $row["userID"];
       $_SESSION['Timestamp'] = time();
       exit("200");
     }else {

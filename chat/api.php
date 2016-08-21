@@ -27,7 +27,7 @@ flag can be:
           // TODO
         }
       } else {
-        $result = mysqli_query($conn,"select * from userBasic where userEmail = \"{$queryName}\"");
+        $result = mysqli_query($conn,"select * from userBasic where userName = \"{$queryName}\"");
         // TODO
       }
       mysqli_free_result($result);

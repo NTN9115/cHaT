@@ -14,7 +14,7 @@ DataBase
     *   userPW
     *   signUpDate
 
-*   TABLE userfriends
+*   TABLE userFriends
 
     *   user1ID
     *   user2ID
