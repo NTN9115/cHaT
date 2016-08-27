@@ -21,6 +21,7 @@
       }
       while ($row = mysqli_fetch_assoc($result)) {
         $rowArray = array(
+          'userID' => $row['userID'],
           'userName' => $row['userName'],
           'userEmail' => $row['userEmail']
        );
@@ -61,27 +62,26 @@
           "userName" : "Natsuki",
           "userEmail": "natsuki@chat.com"
         }
-        "friendsList" :{
-          "Friend" :[
-            {
-              "userID"   :"13",
-              "userName" :"Ryujo",
-              "userEmail":"ryujo@chat.com"
-            },
-            {
-              "userID"   :"14",
-              "userName" :"Yudachi",
-              "userEmail":"yudachi@chat.com"
-            }
-          ]
-          "Family" :[
-            {
-            "userID"   :"14",
+        "friendsList" :[
+          {
+            "userID"   :"13",
             "userName" :"Ryujo",
             "userEmail":"ryujo@chat.com"
-            }
-          ]
-        }
+            "groupName":"";
+          },
+          {
+            "userID"   :"14",
+            "userName" :"Yudachi",
+            "userEmail":"yudachi@chat.com"
+            "groupName":"";
+          }
+          {
+          "userID"   :"14",
+          "userName" :"Ryujo",
+          "userEmail":"ryujo@chat.com"
+          "groupName":"Family";
+          }
+        ]
       }
    3.[getCurrentChat]
   -->
