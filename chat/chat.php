@@ -15,20 +15,34 @@
   $resultArray = array();
   include 'userAction/DBAuthConnect.php';
   $result = mysqli_query($conn,"SELECT userID, userName, userEmail ,groupName from userBasic inner join userFriends ON userBasic.userID = userFriends.user2ID and userFriends.user1ID = {$ID}");
+  echo mysqli_error($conn);
   while ($row = mysqli_fetch_assoc($result)) {
     $rowArray = array(
-      "user1ID" => $row['user1ID'],
-      "user2ID" => $row['user2ID'],
+      "userID" => $row['userID'],
+      "userName" => $row['userName'],
       "groupName" => $row['groupname']
     );
     $resultArray[] = $rowArray;
-    print_r($rowArray);
-    echo "<br>";
   }
+  mysqli_free_result($result);
   $getFull["friendsList"] = $resultArray;
-  print_r($getFull);
-  echo "<br>";
-  echo json_encode($resultArray);
+  $rowArray = null;
+  $row = null;
+
+  $result = mysqli_query($conn,"select userID, userName, userEmail from userBasic where userID = {$ID}");
+  $row = mysqli_fetch_assoc($result);
+  $rowArray = array(
+    "userID" => $row['userID'],
+    "userName" => $row['userName'],
+    "userEmail" => $row['userEmail']
+  );
+  $getFull["userInf"] = $rowArray;
+  echo json_encode($getFull);
+  mysqli_free_result($result);
+  $getFull["friendsList"] = $resultArray;
+  $rowArray = null;
+  $row = null;
+  exit();
 ?>
 <!--
   1.use session to check if online

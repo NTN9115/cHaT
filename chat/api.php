@@ -36,7 +36,34 @@
       case 'getFull':
         include 'userAction/DBAuthConnect.php';
         $resultArray = array();
+        $result = mysqli_query($conn,"SELECT userID, userName, userEmail ,groupName from userBasic inner join userFriends ON userBasic.userID = userFriends.user2ID and userFriends.user1ID = {$ID}");
+        echo mysqli_error($conn);
+        while ($row = mysqli_fetch_assoc($result)) {
+          $rowArray = array(
+            "userID" => $row['userID'],
+            "userName" => $row['userName'],
+            "groupName" => $row['groupname']
+          );
+          $resultArray[] = $rowArray;
+        }
+        mysqli_free_result($result);
+        $getFull["friendsList"] = $resultArray;
+        $rowArray = null;
+        $row = null;
 
+        $result = mysqli_query($conn,"select userID, userName, userEmail from userBasic where userID = {$ID}");
+        $row = mysqli_fetch_assoc($result);
+        $rowArray = array(
+          "userID" => $row['userID'],
+          "userName" => $row['userName'],
+          "userEmail" => $row['userEmail']
+        );
+        $getFull["userInf"] = $rowArray;
+        echo json_encode($getFull);
+        mysqli_free_result($result);
+        $getFull["friendsList"] = $resultArray;
+        $rowArray = null;
+        $row = null;
       break;
 
       case 'getCurrentChat':
