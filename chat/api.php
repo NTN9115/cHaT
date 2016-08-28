@@ -111,4 +111,10 @@
         ]
       }
    3.[getCurrentChat]
+   4.[startChatWith]
+    4.1 revecive a userID to start a chat
+    4.2 send current timestamp
+    4.3 receive a timestamp and a userID
+    4.4 query DB
+    4.5 send chat
   -->
