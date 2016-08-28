@@ -18,8 +18,16 @@ DataBase
 
     *   user1ID
     *   user2ID
+    *   groupname
 
 *   TABLE userChat
+
+    *   user1ID
+    *   user2ID
+    *   chatTime
+    *   contentType
+    *   content
+    *   unread
 
 DBauth.php
 --------------------------------------------------------------------------------

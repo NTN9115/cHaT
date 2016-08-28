@@ -9,6 +9,8 @@
   $flag = $POST['flag'];
   $queryEmail = $POST['qEmail'];
   $queryName = $POST['qName'];
+  $userID = $POST['userID'];
+  $timeStamp = $POST['timeStamp'];
 
   switch ($flag) {
     case 'search':
