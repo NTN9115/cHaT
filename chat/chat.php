@@ -36,7 +36,13 @@
     <div class="row">
       <div class="col-lg-2">
         <div id="headFunction">
-          holder
+          <img src="/img/avator.jpg" alt="" />
+        </div>
+        <div id="chatListContainer">
+          chatListContainerHolder
+        </div>
+        <div id="friendsListContainer">
+
         </div>
       </div>
       <div class="col-lg-10">
