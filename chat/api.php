@@ -98,7 +98,6 @@
             "userEmail":"ryujo@chat.com"
             "groupName":"";
           },
-          {
             "userID"   :"14",
             "userName" :"Yudachi",
             "userEmail":"yudachi@chat.com"
