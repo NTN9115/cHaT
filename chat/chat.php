@@ -36,7 +36,7 @@
     <div class="row">
       <div class="col-lg-2">
         <div id="headFunction">
-          <img src="/img/avator.jpg" alt="" />
+          <img src="/img/avator.jpg" alt="avator" />
         </div>
         <div id="chatListContainer">
           chatListContainerHolder
@@ -49,6 +49,7 @@
         <header>
           <p class="text-right">
             Minamiya Natsuki
+            <img src="/img/avator.jpg" alt="" />
           </p>
         </header>
       </div>

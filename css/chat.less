@@ -12,9 +12,13 @@ body{
     background: -webkit-linear-gradient(#99C5EB, #99C5EB 50px,#D8D8D8);
     img{
       display: block;
-      width: 88px;
-      height: 88px;
+      width: 35%;
+      height: 35%;
       border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
     }
   }
   #chatListContainer{
@@ -24,5 +28,17 @@ body{
   header{
     height: 50px;
     background-color: #99C5EB;
+    p{
+      margin: 0;
+      padding: 0;
+      color: #FFF;
+      font-size: 1.2em;
+      img{
+        margin: 2px 14px;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+      }
+    }
   }
 }
