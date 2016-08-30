@@ -36,7 +36,11 @@
     <div class="row">
       <div class="col-lg-2">
         <div id="headFunction">
-          <img src="/img/avator.jpg" alt="avator" />
+          <div class="functionButton text-center">
+            <button type="button" name="chatListButton"><span class="glyphicon glyphicon-edit"></span></button>
+            <button type="button" name="friendsListButton"><span class="glyphicon glyphicon-user"></span></button>
+          </div>
+          <img src="/img/yudachi.jpg" alt="avator" />
         </div>
         <div id="chatListContainer">
           chatListContainerHolder
