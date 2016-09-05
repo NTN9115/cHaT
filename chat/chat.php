@@ -35,15 +35,26 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2">
-        <div id="headFunction">
-          <div class="functionButton text-center">
-            <button type="button" name="chatListButton"><span class="glyphicon glyphicon-edit"></span></button>
-            <button type="button" name="friendsListButton"><span class="glyphicon glyphicon-user"></span></button>
+        <div class="holder">
+          <div id="headFunction">
+            <div class="functionButton ">
+              <button type="button" name="chatListButton"><span class="glyphicon glyphicon-edit"></span></button>
+              <button type="button" name="friendsListButton"><span class="glyphicon glyphicon-user"></span></button>
+            </div>
+            <img src="/img/yudachi.jpg" alt="avator" />
+            <button type="button" name="closeChatTarget"><span class="glyphicon glyphicon-remove"></span></button>
+            <p id="chatTargetName">Yudachi</p>
           </div>
-          <img src="/img/yudachi.jpg" alt="avator" />
         </div>
         <div id="chatListContainer">
-          chatListContainerHolder
+          <div class="chatListUnit" data-UserID="13">
+            <img src="/img/ryujo.png" alt="" />
+            <h3>Ryujo</h3>
+            <p class="time">now</p>
+            <p>
+              Hi,Welcome to cHaT...
+            </p>
+          </div>
         </div>
         <div id="friendsListContainer">
 

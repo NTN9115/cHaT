@@ -4,35 +4,60 @@ body{
   }
   .col-lg-2{
     background-color: #EBEBEB !important;
-  }
-  #headFunction{
-    height: 0;
-    width: 100%;
-    padding-bottom: 100%;
-    background: -webkit-linear-gradient(#99C5EB, #99C5EB 50px,#D8D8D8);
-    .functionButton{
-      // top: 25px;
-      button{
-        margin: 10px;
-        border: 0;
-        background: rgba(0,0, 0,0);
-        span{
-          font-size: 34px;
-          color: #FFF;
+    .holder{
+      width: 100%;
+      position: relative;
+      #headFunction{
+        height: 0;
+        width: 100%;
+        padding-bottom: 100%;
+        background: -webkit-linear-gradient(#99C5EB, #99C5EB 50px,#D8D8D8);
+        .functionButton{
+          position: absolute;
+          top: 10%;
+          left: 50%;
+          transform: translate(-50%);
+          button{
+            border: 0;
+            background: rgba(0,0, 0,0);
+            span{
+              font-size: 34px;
+              color: #FFF;
+            }
+          }
+        }
+        img{
+          display: block;
+          width: 35%;
+          height: 35%;
+          border-radius: 50%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+        }
+
+        button[name = closeChatTarget]{
+          position: absolute;
+          top: 50%;
+          right: 10%;
+          transform: translate(-50%,-50%);
+          border: 0;
+          background: rgba(0,0,0,0);
+          color: #9D9D9D;
+        }
+
+        #chatTargetName{
+          position: absolute;
+          top: 80%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          font-size: 1.5em;
         }
       }
     }
-    img{
-      display: block;
-      width: 35%;
-      height: 35%;
-      border-radius: 50%;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
-    }
   }
+
   #chatListContainer{
     width: 100%;
 
