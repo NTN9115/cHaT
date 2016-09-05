@@ -46,16 +46,18 @@
             <p id="chatTargetName">Yudachi</p>
           </div>
         </div>
+
         <div id="chatListContainer">
           <div class="chatListUnit" data-UserID="13">
             <img src="/img/ryujo.png" alt="" />
-            <h3>Ryujo</h3>
+            <h4>Ryujo</h4>
             <p class="time">now</p>
-            <p>
+            <p class="glimp">
               Hi,Welcome to cHaT...
             </p>
           </div>
         </div>
+
         <div id="friendsListContainer">
 
         </div>
