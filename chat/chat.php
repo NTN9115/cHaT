@@ -34,7 +34,7 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-2">
+      <div class="col-lg-2 col-md-3">
         <div class="holder">
           <div id="headFunction">
             <div class="functionButton ">
@@ -48,7 +48,7 @@
         </div>
 
         <div id="chatListContainer">
-          <div class="chatListUnit" data-UserID="13">
+          <div class="chatListUnit templete" data-UserID="13">
             <img src="/img/ryujo.png" alt="" />
             <h4>Ryujo</h4>
             <p class="time">now</p>
@@ -56,13 +56,14 @@
               Hi,Welcome to cHaT...
             </p>
           </div>
+
         </div>
 
         <div id="friendsListContainer">
-
+          
         </div>
       </div>
-      <div class="col-lg-10">
+      <div class="col-lg-10 col-md-9">
         <header>
           <p class="text-right">
             Minamiya Natsuki
