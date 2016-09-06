@@ -110,6 +110,13 @@ body{
           line-height: 30px;
           &:hover{
             background-color: #D3E6FC;
+            span{
+              animation: rotateArrow 0.5s;
+              -webkit-animation: rotateArrow 0.5s;
+              animation-fill-mode: forwards;
+              -webkit-animation-fill-mode: forwards;
+
+            }
           }
         }
       }
@@ -132,5 +139,17 @@ body{
         border-radius: 50%;
       }
     }
+  }
+}
+@keyframes rotateArrow {
+  from{
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
