@@ -60,7 +60,21 @@
         </div>
 
         <div id="friendsListContainer">
-          
+          <ul id="group">
+            <li data-groupname="Friends" data-toggle="collapse" data-target="#Friends">
+              <span class="glyphicon glyphicon-chevron-right"></span>Friends
+           </li>
+           <ul class="collapse" id="Friends">
+             <li>Ryujo</li>
+             <li>Kaga</li>
+           </ul>
+            <li data-groupname="Destroyer">
+              <span class="glyphicon glyphicon-chevron-right"></span>Destroyer
+            </li>
+            <li data-groupname="Aircraft Carrier">
+              <span class="glyphicon glyphicon-chevron-right"></span>Aircraft Carrier
+            </li>
+          </ul>
         </div>
       </div>
       <div class="col-lg-10 col-md-9">
