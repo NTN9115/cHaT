@@ -62,11 +62,11 @@
         <div id="friendsListContainer">
           <ul id="group">
             <li data-groupname="Friends" data-toggle="collapse" data-target="#Friends">
-              <span class="glyphicon glyphicon-chevron-right "></span>Friends
+              <span class="glyphicon glyphicon-chevron-right rotateSpan"></span>Friends
            </li>
-           <ul class="collapse" id="Friends">
-             <li>Ryujo</li>
-             <li>Kaga</li>
+           <ul class="collapse in" id="Friends">
+             <li><img src="/img/ryujo.png" alt="" />Ryujo</li>
+             <li><img src="/img/avator.jpg" alt="" />Kaga</li>
            </ul>
             <li data-groupname="Destroyer">
               <span class="glyphicon glyphicon-chevron-right "></span>Destroyer
