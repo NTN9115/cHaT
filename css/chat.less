@@ -106,17 +106,28 @@ body{
         list-style-type: none;
         padding: 0;
         li[data-groupname]{
-          padding-left: 23px;
+          padding-left: 14px;
           line-height: 30px;
+          font-size: 13px;
+          font-family: Helvetica ,arial;
+          color: #4C4C4C;
+          span{
+            padding-right: 4px;
+          }
+          .rotateSpan{
+            animation: rotateArrow 0.5s;
+            -webkit-animation: rotateArrow 0.5s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+          }
+          .rotateSpanBack{
+            animation: rotateArrowBack 0.5s;
+            -webkit-animation: rotateArrowBack 0.5s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+          }
           &:hover{
             background-color: #D3E6FC;
-            span{
-              animation: rotateArrow 0.5s;
-              -webkit-animation: rotateArrow 0.5s;
-              animation-fill-mode: forwards;
-              -webkit-animation-fill-mode: forwards;
-
-            }
           }
         }
       }
@@ -151,5 +162,17 @@ body{
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+  }
+}
+@keyframes rotateArrowBack {
+  from{
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  to{
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
