@@ -152,7 +152,7 @@ body{
   }
 
 
-  header{
+  #chatHeader{
     height: 50px;
     background-color: #99C5EB;
     p{
@@ -160,11 +160,29 @@ body{
       padding: 0;
       color: #FFF;
       font-size: 1.2em;
+      float: right;
       img{
         margin: 2px 14px;
         width: 46px;
         height: 46px;
         border-radius: 50%;
+      }
+    }
+    #headDropDownHolder{
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      width: 150px;
+      height: 160px;
+      background-color: #999AB1;
+      top: 100%;
+      right: 0;
+      #headDropDown{
+        width: 100%;
+        height: 150px;
+        background: #99C5EB;
+        position: absolute;
+        bottom: 0;
       }
     }
   }

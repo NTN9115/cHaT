@@ -61,10 +61,10 @@
 
         <div id="friendsListContainer">
           <ul id="group">
-            <li data-groupname="Friends" data-toggle="collapse" data-target="#Friends">
-              <span class="glyphicon glyphicon-chevron-right rotateSpan"></span>Friends
+            <li class="collapsed" data-groupname="Friends" data-toggle="collapse" data-target="#Friends">
+              <span class="glyphicon glyphicon-chevron-right "></span>Friends
            </li>
-           <ul class="collapse in" id="Friends">
+           <ul class="collapse" id="Friends">
              <li><img src="/img/ryujo.png" alt="" />Ryujo</li>
              <li><img src="/img/avator.jpg" alt="" />Kaga</li>
            </ul>
@@ -78,12 +78,19 @@
         </div>
       </div>
       <div class="col-lg-10 col-md-9">
-        <header>
-          <p class="text-right">
+        <div id="chatHeader">
+          <p class="">
             Minamiya Natsuki
             <img src="/img/avator.jpg" alt="" />
           </p>
-        </header>
+
+          <div id="headDropDownHolder">
+            <div id="headDropDown">
+              headHolder
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
