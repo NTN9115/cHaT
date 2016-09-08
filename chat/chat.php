@@ -86,7 +86,14 @@
 
           <div id="headDropDownHolder">
             <div id="headDropDown">
-              headHolder
+              <img id="headDropDownTrangle" src="/img/trangle.png" alt="" />
+              cHaT
+              <div id="headDropDownFunction">
+                <ul>
+                  <li><span class="glyphicon glyphicon-user"></span>Personal Setting</li>
+                  <li><span class="glyphicon glyphicon-edit"></span>Feedback</li>
+                </ul>
+              </div>
             </div>
           </div>
 
