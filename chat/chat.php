@@ -34,7 +34,7 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-2 col-md-3">
+      <div class="col-lg-2 col-md-3 col-sm-4">
         <div class="holder">
           <div id="headFunction">
             <div class="functionButton ">
@@ -77,7 +77,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-10 col-md-9">
+      <div class="col-lg-10 col-md-9 col-sm-8">
         <div id="chatHeader">
           <p class="">
             Minamiya Natsuki
@@ -93,11 +93,16 @@
                   <li><span class="glyphicon glyphicon-user"></span>Personal Setting</li>
                   <li><span class="glyphicon glyphicon-edit"></span>Feedback</li>
                 </ul>
+                <button type="button" name="setting"><span class="glyphicon glyphicon-cog"></span></button>
+                <button type="button" name="setting"><span class="glyphicon glyphicon-off"></span></button>
               </div>
             </div>
           </div>
-
         </div>
+            <div class="row">
+              <div class="col-lg-7 col-md-7">holder</div>
+              <div class="col-lg-5 col-md-5">holder2</div>
+            </div>
       </div>
     </div>
   </div>

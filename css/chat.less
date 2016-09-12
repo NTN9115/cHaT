@@ -5,7 +5,7 @@ body{
   .templete{
     display: none;
   }
-  .col-lg-2{
+  .col-lg-2,.col-md-3{
     background-color: #EBEBEB !important;
     .holder{
       width: 100%;
@@ -154,76 +154,77 @@ body{
     }
   }
 
-
-  #chatHeader{
-    height: 50px;
-    background-color: #99C5EB;
-    p{
-      margin: 0;
-      padding: 0;
-      color: #FFF;
-      font-size: 1.2em;
-      float: right;
-      display: block;
-      img{
-        margin: 2px 14px;
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-      }
-    }
-    #headDropDownHolder{
-      display: none;
-      z-index: 2;
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      width: 190px;
-      height: 200px;
-      // background-color: #999AB1;
-      top: 100%;
-      right: 14px;
-      opacity: 0;
-      #headDropDown{
-        width: 100%;
-        height: 190px;
-        background: #99C5EB;
-        position: relative;
-        bottom: 10px;
-        border-radius: 5px;
-        text-align: center;
-        font-family: Chalkboard;
-        font-size: 26px;
-        line-height: 44px;
-        // box-shadow: 3px 3px 3px #D3D3D3;
-        color: #4C4C4C;
-        #headDropDownTrangle{
-          position: absolute;
-          top: -10px;
-          right: 13px;
+  .col-lg-10,.col-md-9{
+    #chatHeader{
+      height: 50px;
+      background-color: #99C5EB;
+      p{
+        margin: 0;
+        padding: 0;
+        color: #FFF;
+        font-size: 1.2em;
+        float: right;
+        display: block;
+        img{
+          margin: 2px 14px;
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
         }
-        #headDropDownFunction{
+      }
+      #headDropDownHolder{
+        display: none;
+        z-index: 2;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 190px;
+        height: 200px;
+        // background-color: #999AB1;
+        top: 100%;
+        right: 14px;
+        opacity: 0;
+        #headDropDown{
           width: 100%;
-          height: 146px;
-          font-family: Helvetica;
-          font-size: 15px;
-          position: absolute;
-          bottom:0;
-          background-color: #DFDFDF;
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 5px;
+          height: 190px;
+          background: #99C5EB;
+          position: relative;
+          bottom: 10px;
+          border-radius: 5px;
+          text-align: center;
+          font-family: Chalkboard;
+          font-size: 26px;
+          line-height: 44px;
+          // box-shadow: 3px 3px 3px #D3D3D3;
+          color: #4C4C4C;
+          #headDropDownTrangle{
+            position: absolute;
+            top: -10px;
+            right: 13px;
+          }
+          #headDropDownFunction{
+            width: 100%;
+            height: 146px;
+            font-family: Helvetica;
+            font-size: 15px;
+            position: absolute;
+            bottom:0;
+            background-color: #DFDFDF;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
 
-          text-align: left;
-          ul{
-            list-style-type: none;
-            padding-left: 10px;
-            padding-top: 10px;
-            li{
-              line-height: 40px;
-              font-size: 19px;
-              color: #4C4C4C;
-              span{
-                padding-right: 5px;
+            text-align: left;
+            ul{
+              list-style-type: none;
+              padding-left: 10px;
+              padding-top: 10px;
+              li{
+                line-height: 40px;
+                font-size: 19px;
+                color: #4C4C4C;
+                span{
+                  padding-right: 5px;
+                }
               }
             }
           }
