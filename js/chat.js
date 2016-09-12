@@ -16,6 +16,24 @@ $(document).ready(function() {
     $('#chatHeader').children('p').mouseenter(function(event) {
       // $('#headDropDownHolder').slideToggle(200);
       $('#headDropDownHolder').css('display', 'block');
-      $('#headDropDownHolder').animate({top:"70px",opacity:"1"}, 100)
+      $('#headDropDownHolder').animate({top:"69px",opacity:"1"}, 100);
+      $('#headDropDownHolder').mouseleave(function(event) {
+        if (!$('#headDropDownHolder').is(":animated")) {
+          $('#headDropDownHolder').animate({top:"60px",opacity:"0"}, 100);
+          setTimeout(function(){
+            $('#headDropDownHolder').css('display', 'none');
+          },110)
+        }
+      });
+    });
+
+    //Window.SideList
+    $('button[name=chatListButton]').click(function(event) {
+      $('#chatListContainer').removeClass('templete');
+      $('#friendsListContainer').addClass('templete')
+    });
+    $('button[name=friendsListButton]').click(function(event) {
+      $('#chatListContainer').addClass('templete');
+      $('#friendsListContainer').removeClass('templete')
     });
 });

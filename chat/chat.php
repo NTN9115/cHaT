@@ -47,8 +47,8 @@
           </div>
         </div>
 
-        <div id="chatListContainer">
-          <div class="chatListUnit templete" data-UserID="13">
+        <div id="chatListContainer" class="">
+          <div class="chatListUnit " data-UserID="13">
             <img src="/img/ryujo.png" alt="" />
             <h4>Ryujo</h4>
             <p class="time">now</p>
@@ -59,7 +59,7 @@
 
         </div>
 
-        <div id="friendsListContainer">
+        <div id="friendsListContainer" class="templete">
           <ul id="group">
             <li class="collapsed" data-groupname="Friends" data-toggle="collapse" data-target="#Friends">
               <span class="glyphicon glyphicon-chevron-right "></span>Friends
