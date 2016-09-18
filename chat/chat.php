@@ -53,7 +53,7 @@
             <h4>Ryujo</h4>
             <p class="time">now</p>
             <p class="glimp">
-              Hi,Welcome to cHaT...
+              Hi,Welcome to...
             </p>
           </div>
 
@@ -100,7 +100,18 @@
           </div>
         </div>
             <div class="row">
-              <div class="col-lg-7 col-md-7">holder</div>
+              <div class="col-lg-7 col-md-7">
+                <div class="chatFormContainer ">
+                  <div class="chatForm">
+                    <div class="chatContainer">
+                      holder
+                    </div>
+                    <div class="inputContainer">
+                      inputholder
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="col-lg-5 col-md-5">holder2</div>
             </div>
       </div>

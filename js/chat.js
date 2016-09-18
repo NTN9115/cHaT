@@ -1,6 +1,14 @@
 $(document).ready(function() {
     //WindowControl
 
+    //WindowControl.Blender
+    $('.col-lg-2').height($(window).height());
+    $('.chatFormContainer').height($(window).height()-50);
+    $('.chatContainer').outerHeight($(window).height()-200);
+    $(window).resize(function(event) {
+      $('.chatFormContainer').height($(window).height()-50);
+      $('.col-lg-2').height($(window).height());
+    });
     //WindowControl.FriednList
     $('li[data-groupname]').click(function(event) {
       if ($(this).hasClass('collapsed')) {
