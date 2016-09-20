@@ -1,11 +1,11 @@
 <?php
-  set_include_path('/var/www/html/');
-  set_include_path('/Library/WebServer/Documents');
-  session_start();
-  if ($_SESSION['Online'] != true) {
-   exit("403");
-  }
-  session_write_close();
+  // set_include_path('/var/www/html/');
+  // set_include_path('/Library/WebServer/Documents');
+  // session_start();
+  // if ($_SESSION['Online'] != true) {
+  //  exit("403");
+  // }
+  // session_write_close();
   $flag = $POST['flag'];
   $queryEmail = $POST['qEmail'];
   $queryName = $POST['qName'];
