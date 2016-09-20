@@ -107,7 +107,9 @@
                       holder
                     </div>
                     <div class="inputContainer">
-                      inputholder
+                      <textarea name="chatInput">holder</textarea>
+                      <button><span class="glyphicon glyphicon-picture"></span></button>
+                      <button><span class="glyphicon glyphicon-send"></span></button>
                     </div>
                   </div>
                 </div>

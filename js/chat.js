@@ -8,6 +8,7 @@ $(document).ready(function() {
     $(window).resize(function(event) {
       $('.chatFormContainer').height($(window).height()-50);
       $('.col-lg-2').height($(window).height());
+      $('.chatContainer').outerHeight($(window).height()-200);
     });
     //WindowControl.FriednList
     $('li[data-groupname]').click(function(event) {
