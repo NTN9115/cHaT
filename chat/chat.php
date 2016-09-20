@@ -104,10 +104,11 @@
                 <div class="chatFormContainer ">
                   <div class="chatForm">
                     <div class="chatContainer">
-                      holder
+                      <div class="me"><span>Where do you wanna to go</span><img src="/img/avator.jpg" alt="" /></div>
+                      <div class="you"><img src="/img/yudachi.jpg" alt="" /><span>Let's go to HongKong</span></div>
                     </div>
                     <div class="inputContainer">
-                      <textarea name="chatInput">holder</textarea>
+                      <textarea name="chatInput" placeholder="Press Ender to send"></textarea>
                       <button><span class="glyphicon glyphicon-picture"></span></button>
                       <button><span class="glyphicon glyphicon-send"></span></button>
                     </div>

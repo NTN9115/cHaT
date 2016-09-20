@@ -246,6 +246,42 @@ body{
           min-height: 300px;
           border-top-left-radius: 5px;
           box-sizing: border-box;
+          .me{
+            float: right;
+            clear: both;
+            span{
+              padding: 8px;
+              display: inline-block;
+              // height: 36px;
+              font-size: 14px;
+              box-sizing: border-box;
+              background-color: #DBDBDB;
+              border-radius: 3px;
+            }
+            img{
+              width: 36px;
+              height: auto;
+              border-radius: 50%;
+            }
+          }
+          .you{
+            float: left;
+            clear: both;
+            span{
+              padding: 8px;
+              display: inline-block;
+              // height: 36px;
+              font-size: 14px;
+              box-sizing: border-box;
+              background-color: #C1DAEF;
+              border-radius: 3px;
+            }
+            img{
+              width: 36px;
+              height: auto;
+              border-radius: 50%;
+            }
+          }
         }
         .inputContainer{
           padding: 20px;
@@ -254,18 +290,35 @@ body{
           border-top: 1px solid #66CCFF;
           box-sizing: border-box;
           textarea{
+            width: 80%;
             height: 100%;
             border: 0;
             resize: none;
+            position: relative;
+            background-color: #F6F6F6;
+            &:focus{
+              outline:0;
+            }
           }
           button{
             border: 0;
-            padding-right: 0;
-            // background-color: #A1B3F1;
-            float: right;
-            clear: right;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            transform: translate(-100%);
+            background-color: #F6F6F6;
             span{
-              font-size: 40px;
+              font-size: 35px;
+              color: #99C5EB;
+            }
+            &:last-child{
+              // background-color: #66CCFF;
+              padding-bottom: 20px;
+              // transform: translate(-100%,-50%);
+              bottom: 0%;
+            }
+            &:focus{
+              outline:0;
             }
           }
         }

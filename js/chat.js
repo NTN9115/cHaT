@@ -5,10 +5,12 @@ $(document).ready(function() {
     $('.col-lg-2').height($(window).height());
     $('.chatFormContainer').height($(window).height()-50);
     $('.chatContainer').outerHeight($(window).height()-200);
+    $('textarea[name]').outerWidth($('.inputContainer').width() - 55);
     $(window).resize(function(event) {
       $('.chatFormContainer').height($(window).height()-50);
       $('.col-lg-2').height($(window).height());
       $('.chatContainer').outerHeight($(window).height()-200);
+      $('textarea[name]').outerWidth($('.inputContainer').width() - 55);
     });
     //WindowControl.FriednList
     $('li[data-groupname]').click(function(event) {
