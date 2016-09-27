@@ -104,10 +104,10 @@
             "groupName":"";
           }
           {
-          "userID"   :"14",
-          "userName" :"Ryujo",
-          "userEmail":"ryujo@chat.com"
-          "groupName":"Family";
+            "userID"   :"14",
+            "userName" :"Ryujo",
+            "userEmail":"ryujo@chat.com"
+            "groupName":"Family";
           }
         ]
       }

@@ -1,3 +1,23 @@
+var testUserFriendsList = [
+  {
+    userID   :"13",
+    userName :"Ryujo",
+    userEmail:"ryujo@chat.com",
+    groupName:"",
+  },
+  {
+    userID   :"14",
+    userName :"Yudachi",
+    userEmail:"yudachi@chat.com",
+    groupName:"",
+  },
+  {
+    userID   :"15",
+    userName :"Atago",
+    userEmail:"atago@chat.com",
+    groupName:"Couser",
+  }
+];
 $(document).ready(function() {
     //WindowControl
 
@@ -47,4 +67,16 @@ $(document).ready(function() {
       $('#chatListContainer').addClass('templete');
       $('#friendsListContainer').removeClass('templete')
     });
+
+
+    //Load basic inf use Ajax
+    var lengthOfList = testUserFriendsList.length;
+    console.log(lengthOfList);
+    for (var i = 0; i < lengthOfList; i++) {
+      if (!testUserFriendsList[i].groupName) {
+        console.log("Friends");
+      }else {
+        console.log(testUserFriendsList[i].groupName);
+      }
+    }
 });
