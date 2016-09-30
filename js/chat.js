@@ -1,7 +1,7 @@
 var testUserFriendsList = [
   {
-    userID   :"13",
-    userName :"Ryujo",
+    userID   :"15",
+    userName :"Ryujo Mk II",
     userEmail:"ryujo@chat.com",
     groupName:"",
   },
@@ -12,10 +12,10 @@ var testUserFriendsList = [
     groupName:"",
   },
   {
-    userID   :"15",
+    userID   :"18",
     userName :"Atago",
     userEmail:"atago@chat.com",
-    groupName:"Couser",
+    groupName:"Destroyer",
   }
 ];
 $(document).ready(function() {
@@ -75,8 +75,11 @@ $(document).ready(function() {
     for (var i = 0; i < lengthOfList; i++) {
       if (!testUserFriendsList[i].groupName) {
         console.log("Friends");
+
       }else {
-        console.log(testUserFriendsList[i].groupName);
+        var $userTempleMkI = $("<li><img src=\"\" alt=\"\">"+ testUserFriendsList[i].userName +"</li>");
+        console.log($userTempleMkI);
+        $("#"+testUserFriendsList[i].groupName).append($userTempleMkI);
       }
     }
 });

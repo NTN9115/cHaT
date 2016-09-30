@@ -41,9 +41,14 @@
               <button type="button" name="chatListButton"><span class="glyphicon glyphicon-edit"></span></button>
               <button type="button" name="friendsListButton"><span class="glyphicon glyphicon-user"></span></button>
             </div>
-            <img src="/img/yudachi.jpg" alt="avator" />
-            <button type="button" name="closeChatTarget"><span class="glyphicon glyphicon-remove"></span></button>
-            <p id="chatTargetName">Yudachi</p>
+            <div id="chatListFunctionContainer" class="">
+              <img src="/img/yudachi.jpg" alt="avator" />
+              <button type="button" name="closeChatTarget"><span class="glyphicon glyphicon-remove"></span></button>
+              <p id="chatTargetName">Yudachi</p>
+            </div>
+            <div id="friendsListFunctionContainer" class="">
+
+            </div>
           </div>
         </div>
 
@@ -68,9 +73,12 @@
              <li><img src="/img/ryujo.png" alt="" />Ryujo</li>
              <li><img src="/img/avator.jpg" alt="" />Kaga</li>
            </ul>
-            <li data-groupname="Destroyer">
+            <li class="collapsed" data-groupname="Destroyer" data-toggle="collapse" data-target="#Destroyer">
               <span class="glyphicon glyphicon-chevron-right "></span>Destroyer
             </li>
+            <ul class="collapse" id="Destroyer">
+              <li><img src="" alt="" />Kamikaze</li>
+            </ul>
             <li data-groupname="Aircraft Carrier">
               <span class="glyphicon glyphicon-chevron-right "></span>Aircraft Carrier
             </li>
