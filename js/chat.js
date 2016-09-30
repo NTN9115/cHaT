@@ -16,6 +16,12 @@ var testUserFriendsList = [
     userName :"Atago",
     userEmail:"atago@chat.com",
     groupName:"Destroyer",
+  },
+  {
+    userID   :"19",
+    userName :"Kaga",
+    userEmail:"atago@chat.com",
+    groupName:"CV",
   }
 ];
 $(document).ready(function() {
@@ -61,11 +67,14 @@ $(document).ready(function() {
     //Window.SideList
     $('button[name=chatListButton]').click(function(event) {
       $('#chatListContainer').removeClass('templete');
-      $('#friendsListContainer').addClass('templete')
+      $('#friendsListContainer').addClass('templete');
+      $('#chatListFunctionContainer').removeClass('templete');
+
     });
     $('button[name=friendsListButton]').click(function(event) {
       $('#chatListContainer').addClass('templete');
-      $('#friendsListContainer').removeClass('templete')
+      $('#friendsListContainer').removeClass('templete');
+      $('#chatListFunctionContainer').addClass('templete');
     });
 
 
@@ -77,6 +86,10 @@ $(document).ready(function() {
         console.log("Friends");
 
       }else {
+        if ($("#"+testUserFriendsList[i].groupName).length == 0) {
+          console.log("Bad");
+
+        }
         var $userTempleMkI = $("<li><img src=\"\" alt=\"\">"+ testUserFriendsList[i].userName +"</li>");
         console.log($userTempleMkI);
         $("#"+testUserFriendsList[i].groupName).append($userTempleMkI);
