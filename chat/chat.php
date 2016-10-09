@@ -41,13 +41,19 @@
               <button type="button" name="chatListButton"><span class="glyphicon glyphicon-edit"></span></button>
               <button type="button" name="friendsListButton"><span class="glyphicon glyphicon-user"></span></button>
             </div>
-            <div id="chatListFunctionContainer" class="">
+            <!-- Chat list function container -->
+            <div id="chatListFunctionContainer" class="templete">
               <img src="/img/yudachi.jpg" alt="avator" />
               <button type="button" name="closeChatTarget"><span class="glyphicon glyphicon-remove"></span></button>
               <p id="chatTargetName">Yudachi</p>
             </div>
-            <div id="friendsListFunctionContainer" class="">
 
+            <!-- Friends list function container -->
+            <div id="friendsListFunctionContainer" class="">
+              <button type="button" name="backToChatList"><span class="glyphicon glyphicon-chevron-left"></span></button>
+              <button type="button" name="addFriends"><span class="glyphicon glyphicon-plus-sign"></span></button>
+              <button type="button" name="friendsListSetting"><span class="glyphicon glyphicon-cog"></span></button>
+              <input type="input" name="searchFriendsList" value="" placeholder="search friends">
             </div>
           </div>
         </div>
