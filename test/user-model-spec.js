@@ -1,4 +1,4 @@
-const User = require('../app/model/user');
+const User = new require('../app/model/user');
 const bcrypt = require('bcrypt');
 const expect = require('chai').expect;
 const mongoose = require('mongoose');
@@ -6,9 +6,16 @@ mongoose.Promise = Promise;
 
 const testDB = 'mongodb://localhost/mongoose-spec';
 
+
 dummyUser = {
   userName: "natsuki",
   password: "1234",
+  email   : "yuki@live.com"
+};
+
+falseDummyUser = {
+  userName: "natsuki",
+  password: "5678",
   email   : "yuki@live.com"
 };
 
@@ -34,11 +41,10 @@ describe('User model database test, incloud model method', function () {
   });
   after(function () {
     //drop test db table
-    mongoose.connection.db.dropDatabase(function (err, result) {
+    User.remove({},function (err) {
       if (err) {
         throw err;
       }
-      console.log(result);
     });
   });
   
@@ -67,5 +73,20 @@ describe('User model database test, incloud model method', function () {
       });
     });
   });
+  it('should not matching false password', function (done) {
+    User.findOne({userName: dummyUser.userName}, function (err, userfind) {
+      if (err) {
+        throw err;
+      }
+    
+      User.validPassword(falseDummyUser.password, userfind.password, function (err, isMatch) {
+        if (err) {
+          throw err;
+        }
+        expect(isMatch).not.to.be.ok;
+        done();
+      });
+    });
+  })
 });
 
