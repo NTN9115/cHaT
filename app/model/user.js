@@ -4,10 +4,10 @@ const SALT_WORK_FACTOR = 8;
 
 //define the Schema for user
 let UserSchema = mongoose.Schema({
-  userName: {type: String, required: true},
+  userName: {type: String, required: true, unique: true},
   password: {type: String, required: true},
   UID     : Number,
-  email   : {type: String, required: true}
+  email   : {type: String, required: true, unique: true}
 });
 
 //methods ===================
@@ -28,7 +28,7 @@ UserSchema.pre('save', function (next) {
       
       user.password = hash;
       next();
-    })
+    });
   });
 });
 
@@ -38,7 +38,7 @@ UserSchema.statics.validPassword = function (candidatePassword, bcryptedPassword
       throw err;
     }
     callback(null, isMatch);
-  })
+  });
 };
 
 module.exports = mongoose.model('User', UserSchema);

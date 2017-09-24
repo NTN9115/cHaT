@@ -14,10 +14,12 @@
   },
   "devDependencies": {
     "@types/express": "^4.0.37",
+    "bluebird": "^3.5.0",
     "chai": "^4.1.2",
     "eslint": "^4.7.2",
     "gulp": "^3.9.1",
-    "mocha": "^3.5.3"
+    "mocha": "^3.5.3",
+    "nyc": "^11.2.1"
   },
   "scripts": {
     "test": "mocha"
