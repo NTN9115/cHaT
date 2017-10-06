@@ -17,7 +17,7 @@ const dummyUserA = {
 const dummyUserB = {
   userName: "natsuki",
   password: "1234",
-  email   : "yukia@live.com"
+  email   : "yuki@live.com"
 };
 
 const falseDummyUser = {
@@ -129,7 +129,7 @@ describe('user model basic test', function () {
     mongoose.disconnect();
   });
   
-  it('should not have duplicated userName or email', function (done) {
+  it('should not have duplicated email', function (done) {
     let u = new User(dummyUserB);
     
     u.save().catch(function (err) {
